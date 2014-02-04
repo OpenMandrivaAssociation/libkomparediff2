@@ -4,7 +4,7 @@
 
 Summary:	KDE library to compare files and strings
 Name:		libkomparediff2
-Version:	4.12.1
+Version:	4.12.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -68,6 +68,9 @@ based on libkomparediff2 library.
 %makeinstall_std -C build
 
 %changelog
+* Tue Feb 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.2-1
+- New version 4.12.2
+
 * Tue Jan 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.1-1
 - Split from Kompare package as upstream did
 - New version 4.12.1
