@@ -5,7 +5,7 @@
 
 Summary:	KDE library to compare files and strings
 Name:		libkomparediff2
-Version:	15.04.0
+Version:	15.04.1
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -62,10 +62,10 @@ based on libkomparediff2 library.
 
 %prep
 %setup -q
+%cmake_kde5
 
 %build
-%cmake -G Ninja
-ninja
+%ninja -C build
 
 %install
-DESTDIR="%{buildroot}" ninja install -C build
+%ninja_install -C build
