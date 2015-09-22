@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   libkomparediff2-15.08.0.tar.xz: f71be61c22e9d20400819f55492a38f6ac43600d
+sources:
+  libkomparediff2-15.08.1.tar.xz: a826d2ce639424fbc6b1e7603439e93ea7ad21a7
