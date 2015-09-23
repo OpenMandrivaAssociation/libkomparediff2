@@ -20,6 +20,7 @@ BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5Parts)
+BuildRequires:	cmake(Qt5Test)
 BuildRequires:	ninja
 
 %description
