@@ -20,8 +20,9 @@ BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5Parts)
-BuildRequires:	cmake(Qt5Test)
-BuildRequires:	ninja
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	pkgconfig(Qt5Test)
 
 %description
 KDE library to compare files and strings.
@@ -36,7 +37,6 @@ Group:		System/Libraries
 Kompare shared library.
 
 %files -n %{libname}
-%doc COPYING
 %{_libdir}/libkomparediff2.so.%{major}*
 
 #----------------------------------------------------------------------------
