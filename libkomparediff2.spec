@@ -5,7 +5,7 @@
 
 Summary:	KDE library to compare files and strings
 Name:		libkomparediff2
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -23,15 +23,19 @@ BuildRequires:	cmake(KF5Parts)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(Qt5Test)
+Requires: %{libname} = %{EVRD}
 
 %description
 KDE library to compare files and strings.
+
+%files -f libkomparediff2.lang
 
 #----------------------------------------------------------------------------
 
 %package -n %{libname}
 Summary:	Kompare shared library
 Group:		System/Libraries
+Requires:	%{name} = %{EVRD}
 
 %description -n %{libname}
 Kompare shared library.
@@ -70,3 +74,4 @@ based on libkomparediff2 library.
 
 %install
 %ninja_install -C build
+%find_lang libkomparediff2
