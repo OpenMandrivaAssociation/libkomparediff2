@@ -5,13 +5,13 @@
 
 Summary:	KDE library to compare files and strings
 Name:		libkomparediff2
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
 Url:		http://www.kde.org
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(KF5Codecs)
