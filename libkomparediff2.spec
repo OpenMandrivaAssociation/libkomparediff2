@@ -5,8 +5,8 @@
 
 Summary:	KDE library to compare files and strings
 Name:		libkomparediff2
-Version:	19.12.1
-Release:	2
+Version:	19.12.2
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
