@@ -5,7 +5,7 @@
 
 Summary:	KDE library to compare files and strings
 Name:		libkomparediff2
-Version:	20.04.3
+Version:	20.07.80
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -29,6 +29,7 @@ Requires: %{libname} = %{EVRD}
 KDE library to compare files and strings.
 
 %files -f libkomparediff2.lang
+%{_datadir}/qlogging-categories5/libkomparediff2.categories
 
 #----------------------------------------------------------------------------
 
