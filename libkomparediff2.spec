@@ -60,7 +60,7 @@ based on libkomparediff2 library.
 
 %files -n %{devname}
 %doc COPYING
-%{_includedir}/%{name}
+%{_includedir}/KompareDiff2
 %{_libdir}/cmake/LibKompareDiff2
 %{_libdir}/libkomparediff2.so
 
