@@ -25,11 +25,12 @@ BuildRequires:	cmake(KF6XmlGui)
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(KF6Parts)
-BuildRequires:	pkgconfig(Qt6Core)
-BuildRequires:	pkgconfig(Qt6Core5Compat)
-BuildRequires:	pkgconfig(Qt6Gui)
-BuildRequires:	pkgconfig(Qt6Widgets)
-BuildRequires:	pkgconfig(Qt6Test)
+BuildRequires:	cmake(Qt6)
+BuildRequires:	cmake(Qt6Core)
+BuildRequires:	cmake(Qt6Core5Compat)
+BuildRequires:	cmake(Qt6Gui)
+BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	cmake(Qt6Test)
 # Really conflicts with the plasma5 version
 BuildRequires:	plasma6-xdg-desktop-portal-kde
 Requires: %{libname} = %{EVRD}
