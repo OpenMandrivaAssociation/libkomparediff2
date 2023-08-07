@@ -30,6 +30,8 @@ BuildRequires:	pkgconfig(Qt6Core5Compat)
 BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(Qt6Test)
+# Really conflicts with the plasma5 version
+BuildRequires:	plasma6-xdg-desktop-portal-kde
 Requires: %{libname} = %{EVRD}
 
 %description
