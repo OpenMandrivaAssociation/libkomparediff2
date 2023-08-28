@@ -7,7 +7,6 @@ Summary:	KDE library to compare files and strings
 Name:		libkomparediff2
 Version:	23.08.0
 Release:	1
-Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
 Url:		http://www.kde.org
@@ -51,6 +50,7 @@ Summary:	Development files for libkomparediff2
 Group:		Development/KDE and Qt
 Requires:	%{libname} = %{EVRD}
 Provides:	%{name}-devel = %{EVRD}
+Provides:	%{name}-kf5-devel = %{EVRD}
 Conflicts:	kdesdk4-devel < 1:1.4.11.0
 Conflicts:	kompare-devel < 1:1.4.12.0
 
@@ -67,7 +67,7 @@ based on libkomparediff2 library.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
