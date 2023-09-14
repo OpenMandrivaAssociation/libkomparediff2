@@ -51,8 +51,6 @@ Group:		Development/KDE and Qt
 Requires:	%{libname} = %{EVRD}
 Provides:	%{name}-devel = %{EVRD}
 Provides:	%{name}-kf5-devel = %{EVRD}
-Conflicts:	kdesdk4-devel < 1:1.4.11.0
-Conflicts:	kompare-devel < 1:1.4.12.0
 
 %description -n %{devname}
 This package includes the header files you will need to compile applications
