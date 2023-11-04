@@ -2,7 +2,7 @@
 %define libname %mklibname komparediff2-kf6
 %define devname %mklibname komparediff2-kf6 -d
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-%define git 20231023
+%define git 20231104
 
 Summary:	KDE library to compare files and strings
 Name:		plasma6-libkomparediff2
