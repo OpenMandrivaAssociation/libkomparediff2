@@ -6,7 +6,7 @@
 
 Summary:	KDE library to compare files and strings
 Name:		plasma6-libkomparediff2
-Version:	24.01.75
+Version:	24.01.80
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
