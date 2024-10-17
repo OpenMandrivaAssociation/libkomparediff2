@@ -12,7 +12,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
-Url:		http://www.kde.org
+Url:		https://www.kde.org
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/sdk/libkomparediff2/-/archive/%{gitbranch}/libkomparediff2-%{gitbranchd}.tar.bz2#/libkomparediff2-%{git}.tar.bz2
 %else
