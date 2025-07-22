@@ -8,7 +8,7 @@
 
 Summary:	KDE library to compare files and strings
 Name:		libkomparediff2
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
@@ -36,10 +36,15 @@ BuildRequires:	cmake(Qt6Test)
 BuildRequires:	plasma6-xdg-desktop-portal-kde
 Requires: %{libname} = %{EVRD}
 
+%rename plasma6-libkomparediff2
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KDE library to compare files and strings.
 
-%files -f libkomparediff2.lang
+%files -f %{name}.lang
 %{_datadir}/qlogging-categories6/libkomparediff2.categories
 
 #----------------------------------------------------------------------------
@@ -72,21 +77,3 @@ based on libkomparediff2 library.
 %{_includedir}/KompareDiff2
 %{_libdir}/cmake/KompareDiff2
 %{_libdir}/libkomparediff2.so
-
-#----------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n libkomparediff2-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DBUILD_QCH:BOOL=ON \
-	-DBUILD_WITH_QT6:BOOL=ON \
-	-DQT_MAJOR_VERSION=6 \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
-%find_lang libkomparediff2
